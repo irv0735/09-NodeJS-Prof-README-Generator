@@ -107,7 +107,7 @@ function renderLicenseSection(license) {
   let licenseLink = renderLicenseLink(license);
   let licenseSection = ""
   if (licenseBadge != "") {
-    licenseSection = `[![License: ${license}](${licenseBadge})]${licenseLink}`
+    licenseSection = `[![License]${licenseBadge}](${licenseLink})`
   }
   return licenseSection;
 }

@@ -80,7 +80,7 @@ function init() {
       },
     ])
     .then((data) => {
-      writeToFile("newREADME.md", data);
+      writeToFile("README.md", data);
     });
 }
 
