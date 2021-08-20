@@ -118,7 +118,7 @@ function generateMarkdown(data) {
 
   return `# ${data.title}
   
-  ${license.Section}
+  ${licenseSection}
   
   ## Description
   ${data.description}
