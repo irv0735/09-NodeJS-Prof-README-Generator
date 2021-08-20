@@ -55,46 +55,46 @@ function renderLicenseLink(license) {
   let licenseLink = "";
   switch (license) {
     case "Apache License 2.0":
-      licenseBadge = "(https://opensource.org/licenses/Apache-2.0)"
+      licenseLink = "(https://opensource.org/licenses/Apache-2.0)"
       break;
     case "GNU General Public License v3.0":
-      licenseBadge = "(https://www.gnu.org/licenses/gpl-3.0)"
+      licenseLink = "(https://www.gnu.org/licenses/gpl-3.0)"
       break;
     case "MIT License":
-      licenseBadge = "(https://opensource.org/licenses/MIT)"
+      licenseLink = "(https://opensource.org/licenses/MIT)"
       break;
     case "BSD 2-Clause 'Simplified' License":
-      licenseBadge = "(https://opensource.org/licenses/BSD-2-Clause)"
+      licenseLink = "(https://opensource.org/licenses/BSD-2-Clause)"
       break;
     case "BSD 3-Clause 'New' or 'Revised' License":
-      licenseBadge = "(https://opensource.org/licenses/BSD-3-Clause)"
+      licenseLink = "(https://opensource.org/licenses/BSD-3-Clause)"
       break;
     case "Boost Software License 1.0":
-      licenseBadge = "(https://www.boost.org/LICENSE_1_0.txt)"
+      licenseLink = "(https://www.boost.org/LICENSE_1_0.txt)"
       break;
     case "Creative Commons Zero v1.0 Universal":
-      licenseBadge = "(http://creativecommons.org/publicdomain/zero/1.0/)"
+      licenseLink = "(http://creativecommons.org/publicdomain/zero/1.0/)"
       break;
     case "Eclipse Public License 2.0":
-      licenseBadge = "(https://opensource.org/licenses/EPL-2.0)"
+      licenseLink = "(https://opensource.org/licenses/EPL-2.0)"
       break;
     case "GNU Affero General Public License v3.0":
-      licenseBadge = "(https://www.gnu.org/licenses/agpl-3.0)"
+      licenseLink = "(https://www.gnu.org/licenses/agpl-3.0)"
       break;
     case "GNU General Public License v2.0":
-      licenseBadge = "(https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)"
+      licenseLink = "(https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)"
       break;
     case "GNU Lesser General Public License v2.1":
-      licenseBadge = "(https://www.gnu.org/licenses/lgpl-2.1)"
+      licenseLink = "(https://www.gnu.org/licenses/lgpl-2.1)"
       break;
     case "Mozilla Public License 2.0":
-      licenseBadge = "(https://opensource.org/licenses/MPL-2.0)"
+      licenseLink = "(https://opensource.org/licenses/MPL-2.0)"
       break;
     case "The Unlicense":
-      licenseBadge = "(http://unlicense.org/)"
+      licenseLink = "(http://unlicense.org/)"
       break;
     default:
-      licenseBadge = ""
+      licenseLink = ""
       break;
   };
   return licenseLink;
@@ -107,7 +107,7 @@ function renderLicenseSection(license) {
   let licenseLink = renderLicenseLink(license);
   let licenseSection = ""
   if (licenseBadge != "") {
-    licenseSection = `[![License]${licenseBadge}](${licenseLink})`
+    licenseSection = `[![License](${licenseBadge})]${licenseLink}`
   }
   return licenseSection;
 }
